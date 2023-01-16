@@ -1,4 +1,4 @@
-= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =;
+* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =;
 * PROJECT:		GTMP/TD;
 * PROGRAM: 		WaSH_example_code.SAS;
 * PURPOSE: 		'INTERVENTION' PIECE OF THE ANALYSIS;
