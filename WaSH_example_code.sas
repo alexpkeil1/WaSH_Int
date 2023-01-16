@@ -1,4 +1,4 @@
-f* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =;
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =;
 * PROJECT:		GTMP/TD;
 * PROGRAM: 		WaSH_example_code.SAS;
 * PURPOSE: 		'INTERVENTION' PIECE OF THE ANALYSIS;
@@ -13,7 +13,7 @@ f* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 * reaching elimination ('01') group.; 
 * = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =;
 * EXISTING VARIABLES;
-* elig = 01 î indicates the reaching elimination group; 
+* elig = 01 ‚Äù indicates the reaching elimination group; 
 * eid = eu id number;
 * cid = cluster id number;
 * hid = household id number; 
@@ -326,7 +326,7 @@ data full_01_int_set;
 	ww_int_level = 55;
 	sani_int_level = 0;
 		
-	* community exposures excluding the childís household; 
+	* community exposures excluding the child‚Äôs household; 
 	if ww_exp_hh = 1 then ww_exp_eu_pct2 = (ww_exp_eu_yes_n - 1)/(ww_exp_eu_yes_n + ww_exp_eu_no_n - 1);
 	if ww_exp_hh = 0 then ww_exp_eu_pct2 = (ww_exp_eu_yes_n - 0)/(ww_exp_eu_yes_n + ww_exp_eu_no_n - 1);
 
@@ -346,7 +346,7 @@ run;
 * = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =;
 * 3B. RECREATE SPLINES AT LOCATIONS DETERMINED EARLIER IN ANALYSIS; 
 * = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =;
-data z_01.6.; * í6í here is indicating the run number; 
+data z_01.6.; * ‚Äô6‚Äô here is indicating the run number; 
 	set full_01_int_kids;
 
 	%macro splinecreate (grp, var, short, k1, k2, k3); 					
